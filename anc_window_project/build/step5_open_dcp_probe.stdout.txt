@@ -1,0 +1,34 @@
+
+****** Vivado v2025.2.1 (64-bit)
+  **** SW Build 6403652 on Thu Mar 19 19:48:24 GMT 2026
+  **** IP Build 6403511 on Thu Mar 19 12:41:45 MDT 2026
+  **** SharedData Build 6403650 on Thu Mar 19 14:02:13 MDT 2026
+  **** Start of session at: Sat Sep  5 12:48:01 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {D:\GenericAgent-Desktop-Windows-Portable\runtime\app\temp\anc_window_project\build\step5_open_dcp_probe.tcl} -notrace
+Command: open_checkpoint D:/GenericAgent-Desktop-Windows-Portable/runtime/app/temp/anc_window_project/build/vivado_project_2025_2_1_xc7z020clg400_1_retry/reports_synth/post_synth.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 343.594 ; gain = 4.160
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34969 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1413.152 ; gain = 80.723
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.228 . Memory (MB): peak = 2400.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2.1 (64-bit) build 6403652
+open_checkpoint: Time (s): cpu = 00:01:59 ; elapsed = 00:02:38 . Memory (MB): peak = 2400.914 ; gain = 2072.430
+DCP_OPEN_OK cells=248413 ports=199
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  5 12:50:59 2026...

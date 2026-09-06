@@ -1,0 +1,2 @@
+TB_AXI_PASS
+sim/tb_axi_lite_local_bridge.sv:125: $finish called at 476000 (1ps)

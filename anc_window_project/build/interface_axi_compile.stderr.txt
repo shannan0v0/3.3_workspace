@@ -1,0 +1,2 @@
+rtl/anc_reg_bank.sv:28: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+rtl/anc_reg_bank.sv:28: sorry: constant selects in always_* processes are not currently supported (all bits will be included).

@@ -1,0 +1,50 @@
+[WRAPPER]
+COMMAND=cmd.exe /d /c scripts\run_local_checks.cmd
+RC=0
+STDOUT_BEGIN
+RUN top compile: D:\iverilog\bin\iverilog.exe -g2012 -s anc_top -o build\anc_top.vvp rtl\anc_fx_lms_core.sv rtl\anc_reg_bank.sv rtl\anc_i2s_if.sv rtl\anc_top.sv
+PASS top compile: RC=0
+RUN core compile: D:\iverilog\bin\iverilog.exe -g2012 -s tb_anc_fx_lms_core -o build\tb_core.vvp rtl\anc_fx_lms_core.sv sim\tb_anc_fx_lms_core.sv
+PASS core compile: RC=0
+RUN core simulation: D:\iverilog\bin\vvp.exe build\tb_core.vvp
+PASS core simulation: RC=0
+PASS core simulation: marker found
+RUN register compile: D:\iverilog\bin\iverilog.exe -g2012 -s tb_anc_reg_bank -o build\tb_reg.vvp rtl\anc_reg_bank.sv sim\tb_anc_reg_bank.sv
+PASS register compile: RC=0
+RUN register simulation: D:\iverilog\bin\vvp.exe build\tb_reg.vvp
+PASS register simulation: RC=0
+PASS register simulation: marker found
+RUN python golden reference: C:\Users\Lenovo\AppData\Local\Programs\Python\Python38\python.exe scripts\golden_reference.py
+PASS python golden reference: RC=0
+PASS python golden reference: marker found
+LOCAL_CHECKS_PASS
+
+STDOUT_END
+STDERR_BEGIN
+
+STDERR_END
+
+[NEGATIVE_COMPILE]
+COMMAND=D:\iverilog\bin\iverilog.EXE -g2012 -s tb_negative_update -o C:\WINDOWS\TEMP\anc_step6_neg_y32v0ymq\negative.vvp D:\GenericAgent-Desktop-Windows-Portable\runtime\app\temp\anc_window_project\rtl\anc_fx_lms_core.sv C:\WINDOWS\TEMP\anc_step6_neg_y32v0ymq\tb_negative_update.sv
+RC=0
+STDOUT_BEGIN
+
+STDOUT_END
+STDERR_BEGIN
+
+STDERR_END
+
+[NEGATIVE_RUN]
+COMMAND=D:\iverilog\bin\vvp.EXE C:\WINDOWS\TEMP\anc_step6_neg_y32v0ymq\negative.vvp
+RC=0
+STDOUT_BEGIN
+NEGATIVE_PROBE coeff=-32767 out=0 valid=1 count=1
+NEGATIVE_UPDATE_PASS
+C:\WINDOWS\TEMP\anc_step6_neg_y32v0ymq\tb_negative_update.sv:28: $finish called at 36000 (1ps)
+
+STDOUT_END
+STDERR_BEGIN
+
+STDERR_END
+
+TIMESTAMP=2026-09-04T16:11:31.744010+00:00

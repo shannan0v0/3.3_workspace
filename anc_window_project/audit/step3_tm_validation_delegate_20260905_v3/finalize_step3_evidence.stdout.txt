@@ -1,0 +1,7 @@
+MODEL_IMPORT=PASS path=D:\GenericAgent-Desktop-Windows-Portable\runtime\app\temp\anc_window_project\scripts\tm_fx_lms_cycle_model.py
+TRACE_REPLAY=PASS edges=2608 mismatching_edges=0
+TB_RC=0 CHECKS_PASS=3683 CHECKS_FAIL=0 SUMMARY=(0, 2608)
+CASE_RESULTS={"reset": {"tb": "PASS", "model_mismatches": 0, "edges": 3, "transactions": 0}, "coefficient_write": {"tb": "PASS", "model_mismatches": 0, "edges": 5, "transactions": 0}, "bypass": {"tb": "PASS", "model_mismatches": 0, "edges": 5, "transactions": 1}, "all_128_taps": {"tb": "PASS", "model_mismatches": 0, "edges": 517, "transactions": 129}, "saturation": {"tb": "PASS", "model_mismatches": 0, "edges": 517, "transactions": 129}, "negative_update_direction": {"tb": "PASS", "model_mismatches": 0, "edges": 261, "transactions": 1}, "busy": {"tb": "PASS", "model_mismatches": 0, "edges": 261, "transactions": 1}, "overrun_protection": {"tb": "PASS", "model_mismatches": 0, "edges": 261, "transactions": 1}, "continuous_samples": {"tb": "PASS", "model_mismatches": 0, "edges": 778, "transactions": 3}}
+THROUGHPUT budget=6250 active=257 margin=5993 utilization_percent=4.112
+REPORTS=D:\GenericAgent-Desktop-Windows-Portable\runtime\app\temp\anc_window_project\audit\step3_tm_validation_delegate_20260905_v3\python_comparison.md|D:\GenericAgent-Desktop-Windows-Portable\runtime\app\temp\anc_window_project\audit\step3_tm_validation_delegate_20260905_v3\throughput.md|D:\GenericAgent-Desktop-Windows-Portable\runtime\app\temp\anc_window_project\audit\step3_tm_validation_delegate_20260905_v3\step3_report.md
+VERDICT: PASS

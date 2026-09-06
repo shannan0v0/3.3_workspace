@@ -1,0 +1,2 @@
+TB_CDC_PASS
+sim/tb_anc_cdc_pulse_bridge.sv:65: $finish called at 665000 (1ps)
